@@ -1,0 +1,46 @@
+$card-height = 300px
+$card-width = 200px
+$card-border-width = 20px
+
+.card
+  position: relative
+  height: $card-height
+  width: $card-width
+
+  &.face-down
+
+    .card-front
+      display: none
+
+  &.face-up
+
+    .card-back
+      display: none
+
+.card-back
+  display: none
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 1
+  height: $card-height
+  width: $card-height
+  background-color: $white
+  border-radius: 10px
+
+.card-back-inner
+  position: absolute
+  top: $card-border-width
+  left: $card-border-width
+  z-index: 2
+  height: $card-height - $card-border-width * 2
+  width: $card-height - $card-border-width * 2
+  background-color: $blue
+  border-radius: 10px
+
+.card-front
+  height: $card-height
+  width: $card-height
+  background-color: peachpuff
+  border-radius: 10px
+
