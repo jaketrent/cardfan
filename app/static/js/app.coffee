@@ -2,4 +2,4 @@
 
 $ ->
   $('.card').click ->
-    $(this).toggleClass 'flipped'
+    $(this).find('.card-inner').toggleClass 'is-facedown'
