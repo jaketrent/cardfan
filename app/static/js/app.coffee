@@ -1,5 +1,5 @@
 #= require components/jquery/jquery.js
 
 $ ->
-  $('#card').click ->
-    $(this).toggleClass 'flipped'
+  $('.card').click ->
+    $(this).toggleClass 'is-flipped'
