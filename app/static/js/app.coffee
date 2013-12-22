@@ -2,4 +2,4 @@
 
 $ ->
   $('.card').click ->
-    $(this).toggleClass 'is-flipped'
+    $(this).toggleClass 'flipped'
