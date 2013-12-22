@@ -5,5 +5,8 @@
     "**/.*",
     "node_modules",
     "app/static/js/components"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "~2.0.3"
+  }
 }
