@@ -2,11 +2,29 @@ $card-height = 300px
 $card-width = 200px
 $card-border-width = 20px
 
+$hand-x = 0
+$hand-y = $card-height
+$card-in-hand-z-index = 10
+$card-in-hand-margin = 10px
+
+#card
+  display: none
+
 .card
   width: 200px
   height: 260px
   position: relative
   perspective: 800px
+
+  /* STATES of the CARD */
+  &.is-facedown .card-inner
+    transform: rotateY(180deg)
+
+  &.is-in-hand
+    position: absolute
+    left: 50%
+    bottom: $card-in-hand-margin
+    margin-left: ($card-width / -2)
 
 .card-inner
   width: 100%
@@ -18,9 +36,6 @@ $card-border-width = 20px
   line-height: 260px
   color: $white
   font-size: 80px
-
-  &.is-facedown
-    transform: rotateY(180deg)
 
 .card-side
   display: block
@@ -38,6 +53,9 @@ $card-border-width = 20px
 .card-back
   background: url(/img/card-back.jpg)
   transform: rotateY(180deg)
+
+.card-0 .card-front
+  background-image: url(/img/cards/card-0.jpg)
 
 .card-1 .card-front
   background-image: url(/img/cards/card-1.jpg)
@@ -65,6 +83,3 @@ $card-border-width = 20px
 
 .card-9 .card-front
   background-image: url(/img/cards/card-9.jpg)
-
-.card-10 .card-front
-  background-image: url(/img/cards/card-10.jpg)
