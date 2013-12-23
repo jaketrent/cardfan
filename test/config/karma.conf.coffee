@@ -5,7 +5,7 @@ module.exports = (config) ->
   bowerPath = path.join 'app', 'static', 'js', 'components'
 
   config.set
-    basePath: './..'
+    basePath: './../..'
 
     frameworks: [ 'jasmine' ]
 
@@ -21,6 +21,7 @@ module.exports = (config) ->
       'node_modules/chai/chai.js'
       'node_modules/sinon/pkg/sinon.js'
       'node_modules/sinon-chai/lib/sinon-chai.js'
+      'test/helpers/init.coffee'
 
       # tests
       'test/specs/**/*.spec.coffee'

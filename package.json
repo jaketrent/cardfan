@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node_modules/supervisor/lib/cli-wrapper.js --extensions 'node|js|coffee' --ignore app/static/ app/app.coffee",
-    "test": "node_modules/karma/bin/karma start test/karma.conf.coffee",
+    "test": "node_modules/karma/bin/karma start test/config/karma.conf.coffee",
     "server-test": "node_modules/mocha/bin/mocha test/specs/**/*.spec.coffee --watch"
   },
   "repository": {
