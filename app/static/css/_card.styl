@@ -1,6 +1,9 @@
-$card-height = 300px
-$card-width = 200px
+$card-width = 100px
+$card-height = 141.5px
 $card-border-width = 20px
+
+$card-width-in-hand = 200px
+$card-height-in-hand = 300px
 
 $hand-x = 0
 $hand-y = $card-height
@@ -11,8 +14,8 @@ $card-in-hand-margin = 10px
   display: none
 
 .card
-  width: 200px
-  height: 260px
+  width: $card-width
+  height: $card-height
   position: relative
   perspective: 800px
   transform-origin: 50% 100%
@@ -28,6 +31,8 @@ $card-in-hand-margin = 10px
     left: 25px
 
   &.is-in-hand
+    width: $card-width-in-hand
+    height: $card-height-in-hand
     position: absolute
     left: 50%
     bottom: $card-in-hand-margin
