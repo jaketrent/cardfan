@@ -5,20 +5,23 @@
 
 $ ->
 
-  hand = new Hand()
+  game = new Game()
+  game.init()
 
-  $('.add').on 'click', (evt) ->
-    card = genCard $('.card.is-in-hand').length
-    appendCard card
-    hand.add card
-
-  # temp
-  genCard = (cardIndx) ->
-    newCard = $('#card').clone()
-    newCard.removeAttr 'id'
-    newCard.addClass "card-#{cardIndx}"
-    newCard
-
-  # temp
-  appendCard = (card) ->
-    $('body').append card
+#  hand = new Hand()
+#
+#  $('.add').on 'click', (evt) ->
+#    card = genCard $('.card.is-in-hand').length
+#    appendCard card
+#    hand.add card
+#
+#  # temp
+#  genCard = (cardIndx) ->
+#    newCard = $('#card').clone()
+#    newCard.removeAttr 'id'
+#    newCard.addClass "card-#{cardIndx}"
+#    newCard
+#
+#  # temp
+#  appendCard = (card) ->
+#    $('body').append card

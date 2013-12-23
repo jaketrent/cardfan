@@ -19,7 +19,7 @@ class Card
   addClass: (classes) ->
     @$el.addClass classes
 
-  removceClass: (classes) ->
+  removeClass: (classes) ->
     @$el.removeClass classes
 
   toggleClass: (classes) ->

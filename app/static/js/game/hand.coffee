@@ -1,6 +1,9 @@
 class Hand
 
-  cards: []
+  cardInHandZIndexStart: 10
+
+  constructor: ->
+    @cards = []
 
   add: (card) ->
     card.addClass 'is-in-hand'
@@ -13,3 +16,4 @@ class Hand
 
       card.css
         transform: "rotate(#{rotate})"
+        'z-index': @cardInHandZIndexStart + indx
