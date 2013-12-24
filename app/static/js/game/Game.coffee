@@ -9,7 +9,7 @@ class Game
     @_bindEvents()
 
   _bindEvents: =>
-    $('.card.is-in-deck').on 'click', (evt) =>
+    $(document).on 'click', '.card.is-in-deck', (evt) =>
       card = @deck.draw()
       @hand.add card
 
