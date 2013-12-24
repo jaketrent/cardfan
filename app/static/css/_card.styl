@@ -2,13 +2,15 @@ $card-width = 100px
 $card-height = 141.5px
 $card-border-width = 20px
 
+$card-in-deck-z-index = 400
+
 $card-width-in-hand = 200px
 $card-height-in-hand = 300px
+$card-in-hand-z-index = 200 /* also in code */
+$card-in-hand-margin = 10px
 
 $hand-x = 0
 $hand-y = $card-height
-$card-in-hand-z-index = 10
-$card-in-hand-margin = 10px
 
 #card
   display: none
@@ -29,6 +31,7 @@ $card-in-hand-margin = 10px
     position: absolute
     bottom: 25px
     left: 25px
+    z-index: $card-in-deck-z-index
 
   &.is-in-hand
     width: $card-width-in-hand

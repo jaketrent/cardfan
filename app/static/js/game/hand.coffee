@@ -1,6 +1,6 @@
 class Hand
 
-  cardInHandZIndexStart: 10
+  cardInHandZIndexStart: 200
 
   constructor: ->
     @cards = []
